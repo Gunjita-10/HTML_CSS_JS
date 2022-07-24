@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: #051960;
+        }
+        #time{
+           margin-top: 40%;
+           border-radius: 60%;
+          
+        }
+            
+            
+
+        .body{
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .clock{
+            position: absolute;
+            width: 650px;
+            height: 650px;
+            border-radius: 450%;
+            top: 50%;
+            left: 50%;
+            text-align: center;
+            font-style: italic;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #F9CCE1;
+            transform: translateX(-50%) translateY(-50%);
+            letter-spacing: 8px;
+
+            font-size: 75px;
+            box-shadow: 20px 20px 50px #CB98ED,
+            20px 20px 80px #FBC2EB;
+            border-top: 5px solid #C27AC3 ;
+            ::backdrop: blur(101px);
+            :-webkit-backdrop-filter: blur(101px);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="clock" onload="samay()">
+    <p  id="time"></p></div>
+    <script>
+        function samay(){
+            let date = new Date();
+            let HH = date.getHours();
+            let MM = date.getMinutes();
+            let SS = date.getSeconds();
+            let status = "AM";
+            if(HH == 0 ){      
+            HH = 12 ;
+             }
+             if(HH > 12){
+                 HH = HH - 12;
+                 status = "PM";
+             }
+             HH = ( HH < 10 ) ? "0" + HH : HH;
+             SS = ( SS < 10 ) ? "0" + SS : SS;
+             MM = ( MM < 10 ) ? "0" + MM : MM;
+
+             let T = HH + "::" + MM + "::" + SS + "::" + status;
+             document.getElementById("time").innerText = T;
+             setTimeout(samay,1000);
+            
+        }
+        samay();
+        
+    </script>
+</body>
+</html>
