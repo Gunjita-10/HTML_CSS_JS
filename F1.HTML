@@ -1,0 +1,166 @@
+    <!DOCTYPE html>
+    <html>
+        <head><style>
+            * {  
+      margin: 0;  
+      padding: 0;  
+      box-sizing: border-box;  
+      font-family: "Poppins", sans-serif;
+      background-color: #371F76;
+      border-radius: 50px; 
+       
+ }  
+ body {  
+      overflow: hidden; 
+      background: linear-gradient(to bottom, #E07EF0, #1892A2 #386AC0);   
+ }  
+ section {  
+      display: flex;  
+      min-height: 100vh;  
+      align-items: center;  
+      justify-content: center;  
+      background: linear-gradient(to bottom, #E07EF0, #1892A2 #386AC0);  
+ }  
+ section .colour {  
+      position: absolute;  
+      filter: blur(1000px);  
+ }  
+ 
+ .box {  
+      position: relative;  
+      border-radius: 500PX;
+ }  
+ .box .square {  
+      position: absolute;   
+      box-shadow: 20PX 20PX 20PX #F9CCE1;
+      backdrop-filter: blur(1000px);  
+      background: rgba(129, 193, 252, 0.1);  
+      animation-delay: calc(-1s * var(--i));  
+      animation: animate 10s linear infinite;  
+      box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);  
+      border: 1px solid  #386AC0);  
+      border-right: 1px solid rgba(255, 255, 255, 0.2);  
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);  
+ } 
+   
+ 
+   
+ .container {  
+      width: 400px;  
+      box-shadow: 20PX 20PX 20PX #F9CCE1;
+      display: flex;  
+      height: 500px;
+      position: relative;  
+       border-radius: 50px; 
+      align-items: center;  
+      justify-content: center;  
+      backdrop-filter: blur(5px);  
+      background: rgba(255, 255, 255, 0.1);  
+      box-shadow: 0 15px 200px #F9CCE1;  
+      border: 1px solid rgba(255, 255, 255, 0.5);  
+      border-right: 1px solid rgba(255, 255, 255, 0.2);  
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);  
+ }  
+ .form {  
+      width: 100%;  
+      height: 100%;  
+      padding: 40px;  
+      position: relative;  
+ }  
+ .form h3 {  
+      color:  #DEA1CE;  
+      font-size: 24px;  
+      font-weight: 600;  
+      position: relative;  
+      letter-spacing: 1px;  
+      margin-bottom: 40px;  
+ }  
+ .form h3::before {  
+      left: 0;  
+      width: 80px;  
+      height: 4px;  
+      content: "";  
+      bottom: -10px;  
+      background:  #386AC0;  
+      position: absolute;  
+ }  
+ .form .input__box {  
+      width: 100%;  
+      margin-top: 20px;  
+ }  
+ .form .input__box input {  
+      width: 100%;  
+      color: WHITE;  
+      border: none;  
+      outline: none;  
+      font-size: 16px;  
+      padding: 10px 20px;  
+      letter-spacing: 1px;  
+      border-radius: 35px;  
+      background: rgba(255, 255, 255, 0.2);  
+      border: 1px solid rgba(255, 255, 255, 0.5);  
+      box-shadow: 0 5px 15px #FBC2EB 
+      border-right: 1px solid rgba(255, 255, 255, 0.2);  
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);  
+ }  
+ .form::placeholder {  
+      color:  #DEA1CE;  
+ }  
+ .form .input__box button[type="submit"] {  
+      color: #E07EF0;  
+      cursor: pointer;    
+      max-width: 100px;  
+      background: rgba(255, 255, 255, 0.2);  
+      border: 1px solid rgba(255, 255, 255, 0.5);  
+      box-shadow: 0 5px 15px #FBC2EB 
+      font-weight: 600;  
+      margin-bottom: 20px; 
+      margin: 45px 0 30px 0;
+      height: 50px;
+      width: 360px;
+      border-radius: 20px;
+      
+ } 
+  
+ .forget {  
+      color:  #DEA1CE;  
+      margin-top: 5px;  
+ }  
+ .forget a {  
+      color: #fff;  
+      font-weight: 600;  
+      text-decoration: none;  
+ }  
+        </style>
+
+        </head>
+        <body>
+            <section>
+                <div class="colour"></div>  
+                
+                <div class="box">  
+                     <div class="square" style="--i:0;"></div>  
+                       
+                     <div class="container">  
+                          <div class="form">  
+                               <h3>Login Form</h3>  
+                               <form>  
+                                    <div class="input__box">  
+                                         <input type="text" placeholder="Email or phone">  
+                                    </div>  
+                                    <div class="input__box">  
+                                         <input type="password" placeholder="Password">  
+                                    </div>  
+                                    <div class="input__box">  
+                                         <button type="submit">login</button>  
+                                    </div>  
+                                    
+                                    <p class="forget">Forgot Password? <a href="#">   Click Here</a></p> <br> 
+                                    <p class="forget">Don't have an account? <a href="#">   Sign Up</a></p>  
+                               </form>  
+                          </div>  
+                     </div>  
+                </div> 
+            </section>
+        </body>
+    </html>
