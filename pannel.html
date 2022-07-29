@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+            margin: 0%;
+            background:#151D55;
+        }
+        .pannel {
+            display: inline-flex;
+            width: 50px;
+            height: 700px;
+            margin-left: 10px;
+            border-radius: 100px;
+            transition: 1s;
+            background-position: center;
+            background-size: 110% auto;
+            background-repeat: no-repeat;
+            box-shadow: 20px 20px 50px #273248,
+            20px 20px 80px #FC7643;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="pannel" style = "background-image: url('./jk1.png');"  id="a" onclick="show('a')"></div>
+    <div class="pannel" style = "background-image: url('./jk2.png');" id="b" onclick="show('b')"></div>
+    <div class="pannel" style = "background-image: url('./jk3.png');" id="c" onclick="show('c')"></div>
+    <div class="pannel" style = "background-image: url('./jk9.png');" id="d" onclick="show('d')"></div>
+    <div class="pannel" style = "background-image: url('./jk10.png');" id="e" onclick="show('e')"></div>
+    <div class="pannel" style = "background-image: url('./jk11.png');" id="f" onclick="show('f')"></div>
+    <div class="pannel" style = "background-image: url('./jk7.png');" id="g" onclick="show('g')"></div>
+    <div class="pannel" style = "background-image: url('./jk8.png');" id="h" onclick="show('h')"></div>
+    <div class="pannel" style = "background-image: url('./jk12.png');" id="i" onclick="show('i')"></div>
+    <div class="pannel" style = "background-image: url('./jk13.png');" id="j" onclick="show('j')"></div>
+    <script>
+        document.getElementById('a').style.width = '600px';
+        pa = 'a';
+        function show(n){
+            document.getElementById(pa).style.width = '50px';
+            document.getElementById(n).style.width = '600px';
+            pa = n;
+        }
+
+    </script>
+</body>
+</html>
