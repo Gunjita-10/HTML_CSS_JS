@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+  margin: 0;
+  background-color: #3168f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.snowman {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.face {
+  background-color: #8DBAFE;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: -1rem;
+  justify-content: space-around;
+}
+.eyes {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 1rem;
+}
+.eyes div {
+  width: 20px;
+  height: 20px;
+  background-color: #D01B59;
+  border-radius: 50%;
+}
+.nose {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #D01B59;
+  margin-top: -1.5rem;
+}
+.mouth {
+  width: 32px;
+  height: 15px;
+  border-radius: 50%;
+  margin-top: -2rem;
+  border-bottom: 5px solid;
+}
+.body {
+  background-color:#8DBAFE;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  box-shadow: 0 22px 14px -4px rgba(0, 0, 0, 0.2);
+}
+.body .btn {
+  width: 20px;
+  height: 20px;
+  background-color: #4663BE;
+  border-radius: 50%;
+}
+.hat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateX(10px) rotate(10deg);
+  margin-bottom: -1.7rem;
+  z-index: 9;
+}
+.sq {
+  width: 100px;
+  height: 50px;
+  background-color: #000000;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.ribbon {
+  width: 100px;
+  background-color: #B62355;
+  height: 15px;
+}
+.cr {
+  width: 150px;
+  height: 10px;
+  background-color: #000000;
+  border-radius: 10px;
+}
+.left-hand {
+  position: absolute;
+  left: -12px;
+  top: 0;
+  height: 157px;
+  z-index: -1;
+  border-radius: 50%;
+  width: 46px;
+  transform: rotate(39deg);
+  background-color:#8DBAFE;
+}
+.right-hand{
+  position: absolute;
+  right: -12px;
+  top: 0;
+  height: 157px;
+  z-index: -1;
+  border-radius: 50%;
+  width: 46px;
+  transform: rotate(-39deg);
+  background-color: #8DBAFE;
+}
+      </style>
+    </head>
+<body>
+    <div class="snowman">
+      <div class="hat">
+        <div class="sq"></div>
+        <div class="ribbon"></div>
+        <div class="cr"></div>
+      </div>
+      <div class="face">
+        <div class="eyes">
+          <div></div>
+          <div></div>
+        </div>
+        <div class="nose"></div>
+        <div class="mouth"></div>
+        
+      </div>
+      <div class="body">
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="left-hand"></div>
+        <div class="right-hand"></div>
+      </div>
+    </div>
+</body>
+</html>
